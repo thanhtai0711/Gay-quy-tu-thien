@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: white;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>DỰ ÁN GÂY QUỸ</h1>
+  <p>dự án gây quỹ từ thiện TPHCM</p>
+</div>
+
+<div class="topnav">
+  <a href="#">TRANG CHỦ</a>
+  <a href="#">VỀ CHÚNG TÔI</a>
+  <a href="#">DỰ ÁN</a>
+  <a href="#" style="float:right">Link</a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>GÂY QUỸ TỪ THIỆN</h2>
+      <h5>Thứ 5,20/2/2025</h5>
+      <div class="fakeimg" style="height: 300px;" style="width: 1250px;"> <img src="data:image/jpeg;base64,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">  </div>
+      <p>VI SAO CHUNG TA NEN GAY QUY </p>
+      <p>Gây quỹ là một hoạt động quan trọng đối với bất kỳ tổ chức hay doanh nghiệp nào. Hoạt động này giúp huy động tài chính hoặc những sản phẩm phi tài chính để hỗ trợ cho mục tiêu và sứ mệnh của tổ chức hoặc doanh nghiệp đó.</p>
+    </div>
+    <div class="card">
+      <h2>Vậy “Gây quỹ” đóng vai trò quan trọng thế nào?
+    </h2>
+      <h5>20/2/2025</h5>
+      <div class="fakeimg" style="height:200px;"> <img src="https://png.pngtree.com/element_our/20190531/ourlarge/pngtree-public-welfare-fundraising-glass-transparent-jar-image_1278355.jpg" width="200"> </div>
+      <p>Gây quỹ quan trọng như thế nào?</p>
+      <p>Nó tạo ra nhận thức ở một người trẻ rằng họ là một phần của cộng đồng và vị trí này đòi hỏi một số trách nhiệm nhất định cũng như sự tự trao quyền. Khi họ gây quỹ cho các bộ phận khác của xã hội, điều đó dạy họ biết trân trọng những gì họ có và hiểu rằng họ có khả năng, ngay từ khi còn nhỏ, để giúp đỡ người khác .</p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>Nơi gây quỹ tình thương</h2>
+      <div class="fakeimg" style="height:150px;"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyvVPFjuUJ54Mkc3rLm9hxszdCIYGXCKwhBg&s" width="100"></div>
+      <p>Nơi những con tim hỗ trợ giúp đỡ nhau</p>
+    </div>
+    <div class="card">
+      <h3>những hoạt động phổ biến</h3>
+      <div class="fakeimg"><p> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-WvBKZA9M0VBkz0eeujQHZ8r28Xjl8GRLEA&s"></p></div>
+      <div class="fakeimg"><p> <img src="https://thingo.com.vn/wp-content/uploads/2024/12/1.png" height="300"></p></div>
+    </div>
+    <div class="card">
+      <h3>Hãy theo dõi chúng tôi</h3>
+      <p>Hãy theo dõi để chia sẻ được nhiều tình thương đến tất cả mọi người</p>
+    </div>
+  </div>
+</div>
+</body>
+</html>
+
